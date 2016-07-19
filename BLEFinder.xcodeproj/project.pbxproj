@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A76216D11D36F27800A8F817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76216D01D36F27800A8F817 /* AppDelegate.swift */; };
+		A76216D31D36F27800A8F817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76216D21D36F27800A8F817 /* ViewController.swift */; };
+		A76216D61D36F27800A8F817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76216D41D36F27800A8F817 /* Main.storyboard */; };
+		A76216D91D36F27800A8F817 /* BLEFinder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A76216D71D36F27800A8F817 /* BLEFinder.xcdatamodeld */; };
+		A76216DB1D36F27800A8F817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A76216DA1D36F27800A8F817 /* Assets.xcassets */; };
+		A76216DE1D36F27800A8F817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A76216DC1D36F27800A8F817 /* LaunchScreen.storyboard */; };
+		A76216E91D36F27800A8F817 /* BLEFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76216E81D36F27800A8F817 /* BLEFinderTests.swift */; };
+		A76216F41D36F27800A8F817 /* BLEFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76216F31D36F27800A8F817 /* BLEFinderUITests.swift */; };
+		A76217021D36F28300A8F817 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76217011D36F28300A8F817 /* CoreLocation.framework */; };
+		A76217041D36F28B00A8F817 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76217031D36F28B00A8F817 /* CoreBluetooth.framework */; };
+		A76217061D3701F900A8F817 /* iBeaconController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76217051D3701F900A8F817 /* iBeaconController.swift */; };
+		A76217081D37026300A8F817 /* LocationManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76217071D37026300A8F817 /* LocationManagerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A76216E51D36F27800A8F817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76216C51D36F27800A8F817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76216CC1D36F27800A8F817;
+			remoteInfo = BLEFinder;
+		};
+		A76216F01D36F27800A8F817 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A76216C51D36F27800A8F817 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A76216CC1D36F27800A8F817;
+			remoteInfo = BLEFinder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A76216CD1D36F27800A8F817 /* BLEFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLEFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76216D01D36F27800A8F817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A76216D21D36F27800A8F817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A76216D51D36F27800A8F817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A76216D81D36F27800A8F817 /* BLEFinder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BLEFinder.xcdatamodel; sourceTree = "<group>"; };
+		A76216DA1D36F27800A8F817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A76216DD1D36F27800A8F817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A76216DF1D36F27800A8F817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76216E41D36F27800A8F817 /* BLEFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76216E81D36F27800A8F817 /* BLEFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEFinderTests.swift; sourceTree = "<group>"; };
+		A76216EA1D36F27800A8F817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76216EF1D36F27800A8F817 /* BLEFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLEFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76216F31D36F27800A8F817 /* BLEFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEFinderUITests.swift; sourceTree = "<group>"; };
+		A76216F51D36F27800A8F817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A76217011D36F28300A8F817 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A76217031D36F28B00A8F817 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A76217051D3701F900A8F817 /* iBeaconController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iBeaconController.swift; sourceTree = "<group>"; };
+		A76217071D37026300A8F817 /* LocationManagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A76216CA1D36F27800A8F817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76217041D36F28B00A8F817 /* CoreBluetooth.framework in Frameworks */,
+				A76217021D36F28300A8F817 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216E11D36F27800A8F817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216EC1D36F27800A8F817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A76216C41D36F27800A8F817 = {
+			isa = PBXGroup;
+			children = (
+				A76217031D36F28B00A8F817 /* CoreBluetooth.framework */,
+				A76217011D36F28300A8F817 /* CoreLocation.framework */,
+				A76216CF1D36F27800A8F817 /* BLEFinder */,
+				A76216E71D36F27800A8F817 /* BLEFinderTests */,
+				A76216F21D36F27800A8F817 /* BLEFinderUITests */,
+				A76216CE1D36F27800A8F817 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A76216CE1D36F27800A8F817 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A76216CD1D36F27800A8F817 /* BLEFinder.app */,
+				A76216E41D36F27800A8F817 /* BLEFinderTests.xctest */,
+				A76216EF1D36F27800A8F817 /* BLEFinderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A76216CF1D36F27800A8F817 /* BLEFinder */ = {
+			isa = PBXGroup;
+			children = (
+				A76216D01D36F27800A8F817 /* AppDelegate.swift */,
+				A76216D21D36F27800A8F817 /* ViewController.swift */,
+				A76216D41D36F27800A8F817 /* Main.storyboard */,
+				A76216DA1D36F27800A8F817 /* Assets.xcassets */,
+				A76216DC1D36F27800A8F817 /* LaunchScreen.storyboard */,
+				A76216DF1D36F27800A8F817 /* Info.plist */,
+				A76216D71D36F27800A8F817 /* BLEFinder.xcdatamodeld */,
+				A76217051D3701F900A8F817 /* iBeaconController.swift */,
+				A76217071D37026300A8F817 /* LocationManagerController.swift */,
+			);
+			path = BLEFinder;
+			sourceTree = "<group>";
+		};
+		A76216E71D36F27800A8F817 /* BLEFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A76216E81D36F27800A8F817 /* BLEFinderTests.swift */,
+				A76216EA1D36F27800A8F817 /* Info.plist */,
+			);
+			path = BLEFinderTests;
+			sourceTree = "<group>";
+		};
+		A76216F21D36F27800A8F817 /* BLEFinderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A76216F31D36F27800A8F817 /* BLEFinderUITests.swift */,
+				A76216F51D36F27800A8F817 /* Info.plist */,
+			);
+			path = BLEFinderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A76216CC1D36F27800A8F817 /* BLEFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76216F81D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinder" */;
+			buildPhases = (
+				A76216C91D36F27800A8F817 /* Sources */,
+				A76216CA1D36F27800A8F817 /* Frameworks */,
+				A76216CB1D36F27800A8F817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLEFinder;
+			productName = BLEFinder;
+			productReference = A76216CD1D36F27800A8F817 /* BLEFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A76216E31D36F27800A8F817 /* BLEFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76216FB1D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinderTests" */;
+			buildPhases = (
+				A76216E01D36F27800A8F817 /* Sources */,
+				A76216E11D36F27800A8F817 /* Frameworks */,
+				A76216E21D36F27800A8F817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76216E61D36F27800A8F817 /* PBXTargetDependency */,
+			);
+			name = BLEFinderTests;
+			productName = BLEFinderTests;
+			productReference = A76216E41D36F27800A8F817 /* BLEFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A76216EE1D36F27800A8F817 /* BLEFinderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A76216FE1D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinderUITests" */;
+			buildPhases = (
+				A76216EB1D36F27800A8F817 /* Sources */,
+				A76216EC1D36F27800A8F817 /* Frameworks */,
+				A76216ED1D36F27800A8F817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A76216F11D36F27800A8F817 /* PBXTargetDependency */,
+			);
+			name = BLEFinderUITests;
+			productName = BLEFinderUITests;
+			productReference = A76216EF1D36F27800A8F817 /* BLEFinderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A76216C51D36F27800A8F817 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = h1apps;
+				TargetAttributes = {
+					A76216CC1D36F27800A8F817 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A76216E31D36F27800A8F817 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A76216CC1D36F27800A8F817;
+					};
+					A76216EE1D36F27800A8F817 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = A76216CC1D36F27800A8F817;
+					};
+				};
+			};
+			buildConfigurationList = A76216C81D36F27800A8F817 /* Build configuration list for PBXProject "BLEFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A76216C41D36F27800A8F817;
+			productRefGroup = A76216CE1D36F27800A8F817 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A76216CC1D36F27800A8F817 /* BLEFinder */,
+				A76216E31D36F27800A8F817 /* BLEFinderTests */,
+				A76216EE1D36F27800A8F817 /* BLEFinderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A76216CB1D36F27800A8F817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76216DE1D36F27800A8F817 /* LaunchScreen.storyboard in Resources */,
+				A76216DB1D36F27800A8F817 /* Assets.xcassets in Resources */,
+				A76216D61D36F27800A8F817 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216E21D36F27800A8F817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216ED1D36F27800A8F817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A76216C91D36F27800A8F817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76216D31D36F27800A8F817 /* ViewController.swift in Sources */,
+				A76216D11D36F27800A8F817 /* AppDelegate.swift in Sources */,
+				A76216D91D36F27800A8F817 /* BLEFinder.xcdatamodeld in Sources */,
+				A76217081D37026300A8F817 /* LocationManagerController.swift in Sources */,
+				A76217061D3701F900A8F817 /* iBeaconController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216E01D36F27800A8F817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76216E91D36F27800A8F817 /* BLEFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A76216EB1D36F27800A8F817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A76216F41D36F27800A8F817 /* BLEFinderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A76216E61D36F27800A8F817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76216CC1D36F27800A8F817 /* BLEFinder */;
+			targetProxy = A76216E51D36F27800A8F817 /* PBXContainerItemProxy */;
+		};
+		A76216F11D36F27800A8F817 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A76216CC1D36F27800A8F817 /* BLEFinder */;
+			targetProxy = A76216F01D36F27800A8F817 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A76216D41D36F27800A8F817 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76216D51D36F27800A8F817 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A76216DC1D36F27800A8F817 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A76216DD1D36F27800A8F817 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A76216F61D36F27800A8F817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A76216F71D36F27800A8F817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A76216F91D36F27800A8F817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A76216FA1D36F27800A8F817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BLEFinder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A76216FC1D36F27800A8F817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLEFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEFinder.app/BLEFinder";
+			};
+			name = Debug;
+		};
+		A76216FD1D36F27800A8F817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BLEFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLEFinder.app/BLEFinder";
+			};
+			name = Release;
+		};
+		A76216FF1D36F27800A8F817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BLEFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLEFinder;
+			};
+			name = Debug;
+		};
+		A76217001D36F27800A8F817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BLEFinderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.h1apps.BLEFinderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BLEFinder;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A76216C81D36F27800A8F817 /* Build configuration list for PBXProject "BLEFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76216F61D36F27800A8F817 /* Debug */,
+				A76216F71D36F27800A8F817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76216F81D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76216F91D36F27800A8F817 /* Debug */,
+				A76216FA1D36F27800A8F817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76216FB1D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76216FC1D36F27800A8F817 /* Debug */,
+				A76216FD1D36F27800A8F817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A76216FE1D36F27800A8F817 /* Build configuration list for PBXNativeTarget "BLEFinderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76216FF1D36F27800A8F817 /* Debug */,
+				A76217001D36F27800A8F817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A76216D71D36F27800A8F817 /* BLEFinder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A76216D81D36F27800A8F817 /* BLEFinder.xcdatamodel */,
+			);
+			currentVersion = A76216D81D36F27800A8F817 /* BLEFinder.xcdatamodel */;
+			path = BLEFinder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A76216C51D36F27800A8F817 /* Project object */;
+}

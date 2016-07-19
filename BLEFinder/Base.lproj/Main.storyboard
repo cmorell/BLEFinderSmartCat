@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLEFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rsO-Wi-Q4j">
+                                <rect key="frame" x="255" y="81" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="gad-f3-FST"/>
+                                    <constraint firstAttribute="height" constant="90" id="obr-ia-rY8"/>
+                                </constraints>
+                                <state key="normal" image="Advertise">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Advertise">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="c97-bc-ZAp" kind="show" id="Efq-CL-ZYU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkZ-fV-Is3">
+                                <rect key="frame" x="255" y="337" width="90" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="21m-2C-dLq"/>
+                                </constraints>
+                                <state key="normal" image="Search">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Search">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="JMq-Pf-hFE" kind="show" id="LH2-p9-Mn1"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZL-E1-8NC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="SmartCatChallenge" id="QSb-QH-VKK"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rsO-Wi-Q4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LcH-1G-SsG"/>
+                            <constraint firstItem="rsO-Wi-Q4j" firstAttribute="trailing" secondItem="mkZ-fV-Is3" secondAttribute="trailing" id="NB7-YU-SWX"/>
+                            <constraint firstItem="rsO-Wi-Q4j" firstAttribute="leading" secondItem="mkZ-fV-Is3" secondAttribute="leading" id="fi0-Jf-57s"/>
+                            <constraint firstItem="rsO-Wi-Q4j" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="jNl-0c-e4a"/>
+                            <constraint firstItem="iZL-E1-8NC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q68-JC-v91"/>
+                            <constraint firstItem="iZL-E1-8NC" firstAttribute="centerX" secondItem="rsO-Wi-Q4j" secondAttribute="centerX" id="wmn-yB-na1"/>
+                            <constraint firstItem="iZL-E1-8NC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yC6-EY-2GC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mkZ-fV-Is3" secondAttribute="bottom" constant="173" id="ynd-zJ-b3o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AdvertiseButton" destination="rsO-Wi-Q4j" id="pzI-VO-SFZ"/>
+                        <outlet property="SearchButton" destination="mkZ-fV-Is3" id="cr2-uf-KZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="60"/>
+        </scene>
+        <!--Location Manager Controller-->
+        <scene sceneID="HB8-DE-aoE">
+            <objects>
+                <viewController id="JMq-Pf-hFE" customClass="LocationManagerController" customModule="BLEFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L2m-VK-Ut7"/>
+                        <viewControllerLayoutGuide type="bottom" id="UKx-90-WGQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8no-4u-iTb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKN-jF-cuZ">
+                                <rect key="frame" x="252" y="97" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4k-mw-KHq">
+                                <rect key="frame" x="-5" y="0.0" width="605" height="44"/>
+                                <items>
+                                    <navigationItem title="Searching" id="Spp-8M-HXT"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RSSI:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RR9-qb-C14">
+                                <rect key="frame" x="86" y="289" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOe-BJ-ESB">
+                                <rect key="frame" x="144" y="289" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn0-ea-dAy">
+                                <rect key="frame" x="55" y="355" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjt-C0-jc9">
+                                <rect key="frame" x="144" y="355" width="258" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jKN-jF-cuZ" firstAttribute="centerX" secondItem="8no-4u-iTb" secondAttribute="centerX" constant="-2.5" id="KJA-uR-Uvd"/>
+                            <constraint firstItem="S4k-mw-KHq" firstAttribute="leading" secondItem="8no-4u-iTb" secondAttribute="leadingMargin" constant="-25" id="Ro5-Oa-OXQ"/>
+                            <constraint firstItem="jKN-jF-cuZ" firstAttribute="centerY" secondItem="8no-4u-iTb" secondAttribute="centerY" constant="-192.5" id="Ufw-kY-PhD"/>
+                            <constraint firstAttribute="trailing" secondItem="S4k-mw-KHq" secondAttribute="trailing" id="Z9U-3U-Dtz"/>
+                            <constraint firstItem="S4k-mw-KHq" firstAttribute="top" secondItem="8no-4u-iTb" secondAttribute="top" id="aKU-hF-478"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rssiLabel" destination="yOe-BJ-ESB" id="snM-m8-nHv"/>
+                        <outlet property="whereIsLabel" destination="zjt-C0-jc9" id="bzT-wV-RZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3e-u2-NcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="251" y="893"/>
+        </scene>
+        <!--Beacon Controller-->
+        <scene sceneID="5oB-az-a1S">
+            <objects>
+                <viewController id="c97-bc-ZAp" customClass="iBeaconController" customModule="BLEFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7uB-Kc-COZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="VjN-5h-vjq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EMX-T7-X7w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-aa-s1I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Broadcasting" id="PKA-3A-8V3"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broadcasting ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7u-nI-6WI">
+                                <rect key="frame" x="240" y="289" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xfa-aa-s1I" firstAttribute="leading" secondItem="EMX-T7-X7w" secondAttribute="leading" id="VQs-H7-nwh"/>
+                            <constraint firstAttribute="trailing" secondItem="xfa-aa-s1I" secondAttribute="trailing" id="b3m-Cv-7hW"/>
+                            <constraint firstItem="xfa-aa-s1I" firstAttribute="top" secondItem="EMX-T7-X7w" secondAttribute="top" id="jQH-hm-0v2"/>
+                            <constraint firstItem="F7u-nI-6WI" firstAttribute="top" secondItem="xfa-aa-s1I" secondAttribute="bottom" constant="245" id="tfM-jC-gzJ"/>
+                            <constraint firstItem="F7u-nI-6WI" firstAttribute="centerX" secondItem="xfa-aa-s1I" secondAttribute="centerX" id="uqG-a6-oHg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DAx-R3-fch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="148"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Advertise" width="512" height="512"/>
+        <image name="Search" width="512" height="512"/>
+    </resources>
+</document>
